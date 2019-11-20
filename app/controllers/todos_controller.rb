@@ -23,6 +23,13 @@ class TodosController < ApplicationController
     @todo = Todo.find(params[:id])
   end
 
+  def update
+    @todo = Todo.find(params[:id])
+    @todo.update(todo_params)
+
+    redirect_to '/todos#show'
+  end
+
   private
 
   def completed_message(todo)
@@ -30,6 +37,6 @@ class TodosController < ApplicationController
   end
 
   def todo_params
-    params.require(:todo).permit(:title, :details)
+    params.require(:todo).permit(:title, :details, :completed)
   end
 end
