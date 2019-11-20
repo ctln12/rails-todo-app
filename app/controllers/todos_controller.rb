@@ -19,6 +19,10 @@ class TodosController < ApplicationController
     redirect_to todos_path
   end
 
+  def edit
+    @todo = Todo.find(params[:id])
+  end
+
   private
 
   def completed_message(todo)
