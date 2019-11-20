@@ -1,0 +1,5 @@
+<h1>My Todos</h1>
+
+<% @todos.each do |thing| %>
+  <div><%= check_box_tag('completed', value='1', checked = thing.completed, options = {id: thing.id}) %> <%= thing.title %></div>
+<% end %>
