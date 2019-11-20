@@ -8,9 +8,18 @@ class TodosController < ApplicationController
     @message = completed_message(@todo)
   end
 
+  def create
+    @todo = Todo.new(todo_params)
+    @todo.save
+  end
+
   private
 
   def completed_message(todo)
     todo.completed ? 'This task is completed' : 'This task is not completed yet'
+  end
+
+  def todo_params
+    params.require(:todo).permit(:title, :details)
   end
 end
