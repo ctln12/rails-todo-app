@@ -8,9 +8,15 @@ class TodosController < ApplicationController
     @message = completed_message(@todo)
   end
 
+  def new
+    @todo = Todo.new
+  end
+
   def create
     @todo = Todo.new(todo_params)
     @todo.save
+
+    redirect_to todo_path(@todo)
   end
 
   private
