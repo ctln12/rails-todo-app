@@ -4,4 +4,4 @@
 
 <p><%= check_box_tag('completed', value='1', checked = @todo.completed, options = {id: @todo.id}) %> <%= @message %></p>
 
-<%= link_to 'Back to list', '/todos' %>
+<%= link_to 'Back to list', todos_path %>
