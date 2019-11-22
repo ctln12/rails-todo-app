@@ -4,4 +4,6 @@
 
 <hr>
 
-<i class='fa fa-chevron-left'></i> <%= link_to 'Back to list', todos_path %>
+<%= link_to todos_path do %>
+  <span><i class='fa fa-chevron-left'></i> Back to list</span>
+<% end %>
