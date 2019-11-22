@@ -1,23 +1,5 @@
 <h1>New todo</h1>
 
-<%= form_for(@todo) do |f| %>
-  <div class="form-group">
-    <%= f.label :title %>
-    <%= f.text_field :title, class: 'form-control' %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :details %>
-    <%= f.text_area :details, class: 'form-control' %>
-  </div>
-
-  <div class="form-group">
-    <label>
-      <%= f.check_box :completed %> completed
-    </label>
-  </div>
-
-  <%= f.submit class: 'btn btn-primary' %>
-<% end %>
+<%= render 'form', todo: @todo %>
 
 <%= link_to 'Back to list', todos_path %>
