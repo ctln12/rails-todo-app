@@ -5,9 +5,11 @@
   <% end %>
 </h1>
 
-<div class="todo-details"><%= @todo.details %></div>
+<div class="todo-details mb-3"><%= @todo.details %></div>
 
 <p><%= check_box_tag('completed', value='1', checked = @todo.completed, options = {id: @todo.id}) %> <%= @message %></p>
+
+<hr>
 
 <%= link_to todos_path do %>
   <span><i class='fa fa-chevron-left'></i> Back to list</span>
