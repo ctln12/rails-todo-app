@@ -1,9 +1,12 @@
-<%= link_to 'Edit', edit_todo_path(@todo), class: "btn btn-primary" %>
+<h1>
+  <%= @todo.title %>
+  <%= link_to edit_todo_path(@todo) do %>
+    <i class='fa fa-edit'></i>
+  <% end %>
+</h1>
 
-<h1><%= @todo.title %></h1>
-
-<div><%= @todo.details %></div>
+<div class="todo-details"><%= @todo.details %></div>
 
 <p><%= check_box_tag('completed', value='1', checked = @todo.completed, options = {id: @todo.id}) %> <%= @message %></p>
 
-<%= link_to 'Back to list', todos_path %>
+<i class='fa fa-chevron-left'></i> <%= link_to 'Back to list', todos_path %>
