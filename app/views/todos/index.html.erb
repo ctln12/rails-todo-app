@@ -4,10 +4,12 @@
   <div>
     <%= check_box_tag('completed', value='1', checked = todo.completed, options = {id: todo.id}) %>
     <%= link_to todo.title, todo_path(todo) %>
-    | <%= link_to 'delete', "todos/#{todo.id}", method: :delete %>
+    <%= link_to "todos/#{todo.id}", method: :delete do %>
+      <i class='far fa-trash-alt'></i>
+    <% end %>
   </div>
 <% end %>
 
 <hr>
 
-<%= link_to 'Add a new todo', new_todo_path %>
+<i class='fa fa-plus'></i> <%= link_to 'Add a new todo', new_todo_path %>
