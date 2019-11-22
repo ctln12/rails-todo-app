@@ -3,11 +3,11 @@
 <% @todos.each do |todo| %>
   <div>
     <%= check_box_tag('completed', value='1', checked = todo.completed, options = {id: todo.id}) %>
-    <%= link_to todo.title, "todos/#{todo.id}" %>
+    <%= link_to todo.title, todo_path(todo) %>
     | <%= link_to 'delete', "todos/#{todo.id}", method: :delete %>
   </div>
 <% end %>
 
 <hr>
 
-<%= link_to 'Add a new todo', todos_new_path %>
+<%= link_to 'Add a new todo', new_todo_path %>
