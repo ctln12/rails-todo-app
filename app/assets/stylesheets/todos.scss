@@ -5,6 +5,20 @@
   max-width: 50%;
 }
 
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0068D9;
+}
+
 .todo-details {
   background-color: #EBEBEB;
   padding: 2rem;
