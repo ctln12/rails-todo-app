@@ -17,7 +17,9 @@ Bootstrap
 
 *Database*
 
-- run `rails db:create` in the terminal then `rails db:migrate`
+- run `rails db:create` in the terminal
+
+- run `rails db:migrate` in the terminal
 
 - run `rails db:seed` in the terminal
 
@@ -31,7 +33,7 @@ Bootstrap
 
 *Deployment on Heroku*
 
-- Sign up on `https://id.heroku.com/signup`
+- sign up on `https://id.heroku.com/signup`
 
 - run `brew install heroku/brew/heroku` in the terminal to install on OS X
 
