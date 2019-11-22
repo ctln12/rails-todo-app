@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   # patch 'todos/:id', to: 'todos#update'
 
   # delete 'todos/:id', to: 'todos#delete'
+  root to: 'todos#index'
   resources :todos
 end
