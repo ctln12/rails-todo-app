@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
-  get 'todos', to: 'todos#index'
+  # get 'todos', to: 'todos#index'
 
-  get 'todos/new', to: 'todos#new'
-  post 'todos', to: 'todos#create'
+  # get 'todos/new', to: 'todos#new'
+  # post 'todos', to: 'todos#create'
 
-  get 'todos/:id', to: 'todos#show'
+  # get 'todos/:id', to: 'todos#show'
 
-  get 'todos/:id/edit', to: 'todos#edit'
-  patch 'todos/:id', to: 'todos#update'
+  # get 'todos/:id/edit', to: 'todos#edit'
+  # patch 'todos/:id', to: 'todos#update'
 
-  delete 'todos/:id', to: 'todos#delete'
+  # delete 'todos/:id', to: 'todos#delete'
+  resources :todos
 end
