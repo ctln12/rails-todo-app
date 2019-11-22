@@ -1,24 +1,46 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
+Here are the necessary steps to get the
 application up and running.
 
-Things you may want to cover:
+*Ruby version*
 
-* Ruby version
+2.6.3
 
-* System dependencies
+*Dependencies*
 
-* Configuration
+Bootstrap
 
-* Database creation
+*Clone repository*
 
-* Database initialization
+- run `git clone git@github.com:ctln12/rails-todo-app.git name-of-folder`in the terminal
 
-* How to run the test suite
+*Database*
 
-* Services (job queues, cache servers, search engines, etc.)
+- run `rails db:create` in the terminal then `rails db:migrate`
 
-* Deployment instructions
+- run `rails db:seed` in the terminal
 
-* ...
+*View locally*
+
+- run `rails server` in the terminal
+
+- go to `localhost:3000/todos`in your browser
+
+- use the commands `ctrl + C` to stop the server
+
+*Deployment on Heroku*
+
+- Sign up on `https://id.heroku.com/signup`
+
+- run `brew install heroku/brew/heroku` in the terminal to install on OS X
+
+- run `heroku login` in the terminal to login
+
+- run `heroku create $YOUR_APP_NAME -- region eu`to create an Heroku app
+
+- run `git push heroku master` to push your code to Heroku
+
+- run `heroku run rails db:migrate`
+
+- run `heroku open` to open the application in your browser
