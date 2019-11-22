@@ -1,7 +1,7 @@
 <h1>My Todos</h1>
 
 <% @todos.each do |todo| %>
-  <div>
+  <div class="my-1">
     <%= check_box_tag('completed', value='1', checked = todo.completed, options = {id: todo.id}) %>
     <%= link_to todo.title, todo_path(todo), class: "px-1" %>
     <%= link_to "todos/#{todo.id}", method: :delete do %>
