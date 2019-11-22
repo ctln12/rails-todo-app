@@ -30,6 +30,13 @@ class TodosController < ApplicationController
     redirect_to "/todos/#{params[:id]}"
   end
 
+  def delete
+    @todo = Todo.find(params[:id])
+    @todo.destroy
+
+    redirect_to todos_path
+  end
+
   private
 
   def completed_message(todo)
