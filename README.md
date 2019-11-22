@@ -13,7 +13,7 @@ Bootstrap
 
 *Clone repository*
 
-- run `git clone git@github.com:ctln12/rails-todo-app.git name-of-folder`in the terminal
+- run `git clone git@github.com:ctln12/rails-todo-app.git name-of-folder` in the terminal
 
 *Database*
 
@@ -27,19 +27,19 @@ Bootstrap
 
 - run `rails server` in the terminal
 
-- go to `localhost:3000/todos`in your browser
+- go to `localhost:3000/todos` in your browser
 
 - use the commands `ctrl + C` to stop the server
 
 *Deployment on Heroku*
 
-- sign up on `https://id.heroku.com/signup`
+- sign up on [heroku](https://id.heroku.com/signup)
 
 - run `brew install heroku/brew/heroku` in the terminal to install on OS X
 
 - run `heroku login` in the terminal to login
 
-- run `heroku create $YOUR_APP_NAME -- region eu`to create an Heroku app
+- run `heroku create $YOUR_APP_NAME -- region eu` to create an Heroku app
 
 - run `git push heroku master` to push your code to Heroku
 
