@@ -8,7 +8,13 @@
 
   <div class="form-group">
     <%= f.label :details %>
-    <%= f.text_field :details, class: 'form-control' %>
+    <%= f.text_area :details, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <label>
+      <%= f.check_box :completed %> completed
+    </label>
   </div>
 
   <%= f.submit class: 'btn btn-primary' %>

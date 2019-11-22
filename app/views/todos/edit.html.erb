@@ -1,6 +1,6 @@
 <h1>Edit todo</h1>
 
-<%= form_for @todo, as: :todo, url: "/todos/#{@todo.id}", method: :patch do |f| %>
+<%= form_for @todo do |f| %>
   <div class="form-group">
     <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control' %>
