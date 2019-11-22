@@ -7,7 +7,7 @@
 
 <div class="todo-details mb-3"><%= @todo.details %></div>
 
-<p><%= check_box_tag('completed', value='1', checked = @todo.completed, options = {id: @todo.id}) %> <%= @message %></p>
+<p><%= check_box_tag('completed', value='1', checked = @todo.completed, options = {id: @todo.id}) %><span class="ml-2"><%= @message %></span></p>
 
 <hr>
 
