@@ -7,10 +7,6 @@ application up and running.
 
 2.6.3
 
-*Dependencies*
-
-Bootstrap
-
 *Clone repository*
 
 - run `git clone git@github.com:ctln12/rails-todo-app.git name-of-folder` in the terminal
@@ -27,7 +23,7 @@ Bootstrap
 
 - run `rails server` in the terminal
 
-- go to `localhost:3000/todos` in your browser
+- go to `localhost:3000` in your browser
 
 - use the commands `ctrl + C` to stop the server
 
@@ -44,5 +40,7 @@ Bootstrap
 - run `git push heroku master` to push your code to Heroku
 
 - run `heroku run rails db:migrate`
+
+- run `heroku run rails db:seed`
 
 - run `heroku open` to open the application in your browser
