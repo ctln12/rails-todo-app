@@ -27,7 +27,7 @@ class TodosController < ApplicationController
     @todo = Todo.find(params[:id])
     @todo.update(todo_params)
 
-    redirect_to '/todos#show'
+    redirect_to "/todos/#{params[:id]}"
   end
 
   private
