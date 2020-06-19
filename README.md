@@ -1,46 +1,28 @@
-# README
+# Task Manager
 
-Here are the necessary steps to get the
-application up and running.
+### Description
+This project aims to build a To Do Manager with the basic CRUD features.
 
-*Ruby version*
+### Technologies
 
-2.6.3
+*Languages:* Ruby, Javascript, CSS, HTML, erb
 
-*Clone repository*
+*Database:* PostgreSQL
 
-- run `git clone git@github.com:ctln12/rails-todo-app.git name-of-folder` in the terminal
+*Frameworks:* Rails, Active Record
 
-*Database*
+### Key features
 
-- run `rails db:create` in the terminal
+- View all tasks
+- View the details of a task
+- Add a new task with a title and detail
+- Edit a task (mark as completed / update title & details)
+- Delete a task
 
-- run `rails db:migrate` in the terminal
+### Project status
 
-- run `rails db:seed` in the terminal
+The project is done.
 
-*View locally*
+### Credits & Sources
 
-- run `rails server` in the terminal
-
-- go to `localhost:3000` in your browser
-
-- use the commands `ctrl + C` to stop the server
-
-*Deployment on Heroku*
-
-- sign up on [heroku](https://id.heroku.com/signup)
-
-- run `brew install heroku/brew/heroku` in the terminal to install on OS X
-
-- run `heroku login` in the terminal to login
-
-- run `heroku create $YOUR_APP_NAME -- region eu` to create an Heroku app
-
-- run `git push heroku master` to push your code to Heroku
-
-- run `heroku run rails db:migrate`
-
-- run `heroku run rails db:seed`
-
-- run `heroku open` to open the application in your browser
+Project built during [Le Wagon](https://www.lewagon.com) coding bootcamp batch#280 (2016)
